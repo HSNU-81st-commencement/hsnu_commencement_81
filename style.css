@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(67, 78, 99);
+    margin: 0 0 0 0;
+}
+
+nav {
+    margin-left: 10px;
+}
+
+#title {
+    font-size: 20px;
+    color: white;
+}
+
+#title:hover {
+    opacity: 0.8;
+}
+
+#copyright {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    color: white;
+    opacity: 0.8;
+}
