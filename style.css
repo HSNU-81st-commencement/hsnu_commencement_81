@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(67, 78, 99);
+    background-color: rgb(32, 56, 52);
     margin: 0 0 0 0;
 }
 
@@ -29,6 +29,86 @@ p {
     }
 }
 
+#background {
+    position: absolute;
+    opacity: 0.5;
+    width: 100%;
+    z-index: -1;
+}
+
+#background img {
+    margin: 0 auto 0 auto;
+    width: 100%;
+}
+
+#navbar {
+    padding: 5px 10px 10px 5px;
+    margin: 0 0 0 0;
+    background-color: rgb(49, 57, 73);
+    height: 10vh;
+}
+
+#icon {
+    border-radius: 15px;
+    height: 50px;
+}
+
+#title {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+#title:hover {
+    opacity: 0.8;
+}
+
+#nav-links {
+    padding-left: 16px;
+    background-color: rgb(49, 57, 73);
+}
+
+#hotel {
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+#content {
+    padding-top: 10vh;
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    animation: 1s slideIn;
+    animation-timing-function: ease-in;
+}
+
+#footer {
+    background-color: rgb(49, 57, 73);
+    height: 20vh;
+}
+
+#copyright {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    color: white;
+    opacity: 0.8;
+}
+
+.container {
+    color: white;
+}
+
 @media only screen and (max-width: 1400px) {
     #head img {
         width: 60vw;
@@ -44,66 +124,20 @@ p {
     }
 }
 
-#background {
-    position: absolute;
-    opacity: 0.5;
-    width: 100%;
-    z-index: -1;
+@media only screen and (max-width: 400px) {
+    #copyright {
+        font-size: 15px;
+    }
+    #content {
+        font-size: 15px;
+    }
+    #title {
+        font-size: 15px;
+    }
 }
 
-#background img {
-    margin: 0 auto 0 auto;
-    width: 100%;
-}
-
-#icon {
-    border-radius: 15px;
-    height: 50px;
-}
-
-#title {
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-}
-
-#title:hover {
-    opacity: 0.8;
-}
-
-#content {
-    padding-top: 10vh;
-    font-size: 20px;
-    font-family: 'Noto Sans TC', sans-serif;
-}
-
-#copyright {
-    font-family: 'Noto Sans TC', sans-serif;
-    color: white;
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-    width: 100%;
-}
-
-.navbar {
-    padding: 10px 0 10px 10px;
-    margin: 0 0 0 0;
-    background-color: rgb(49, 57, 73);
-    height: 10vh;
-}
-
-.link {
-    text-decoration: none;
-    color: white;
-}
-
-.link:hover {
-    color: white;
-    opacity: 0.8;
-}
-
-.container {
-    color: white;
-    margin-top: 20px;
+@media only screen and (max-width: 350px) {
+    #hotel {
+        visibility: visible;
+    }
 }
