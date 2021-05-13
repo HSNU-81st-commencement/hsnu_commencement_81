@@ -5,6 +5,8 @@ body {
 
 p {
     margin: 5vh 0 5vh 0;
+    line-height: 40px;
+    /* TODO */
 }
 
 table {
@@ -17,9 +19,13 @@ table {
 td, th {
     width: 200px;
     font-size: 18px;
-    padding: 5px 0 5px 0;
-    border: 1px solid papayawhip;
+    padding: 5px 1px 5px 1px;
+    /* border: 1px solid papayawhip; */
     text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(223, 175, 85);
 }
 
 tr {
@@ -104,11 +110,17 @@ tr:hover {
     background-color: rgb(49, 57, 73);
     border: 2px solid white;
     border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
 }
 
 #up_button a {
     text-decoration: none;
     color: white;
+}
+
+#up_button:hover {
+    opacity: 0.7;
 }
 
 #title_members {
@@ -131,13 +143,6 @@ tr:hover {
     animation-timing-function: ease-in;
 }
 
-#buttom_bar {
-    padding: 5px 10px 10px 5px;
-    margin: 0 0 0 0;
-    background-color: rgb(49, 57, 73);
-    height: 11vh;
-}
-
 #footer {
     background-color: rgb(49, 57, 73);
     height: 20vh;
@@ -149,6 +154,17 @@ tr:hover {
     text-align: center;
     width: 100%;
     font-size: 20px;
+}
+
+#buttom_bar {
+    padding: 5px 10px 10px 5px;
+    margin: 0 0 0 0;
+    background-color: rgb(49, 57, 73);
+    height: 10vh;
+}
+
+#padding {
+    height: 10vh;
 }
 
 .link {
@@ -169,6 +185,13 @@ tr:hover {
     width: 25px;
     margin: 0 auto 0 auto;
     display: block;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.icon:hover {
+    filter: brightness(150%);
+    width: 26px;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -181,7 +204,7 @@ tr:hover {
     table {
         margin-left: 20px;
         margin-right: 20px;
-    }    
+    }
 }
 
 @media only screen and (max-width: 800px) {
