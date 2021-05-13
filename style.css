@@ -17,12 +17,12 @@ table {
 td, th {
     width: 200px;
     font-size: 18px;
+    padding: 5px 0 5px 0;
     border: 1px solid papayawhip;
     text-align: center;
 }
 
 tr {
-    padding: 5px 0 5px 0;
     color: white;
 }
 
@@ -124,7 +124,7 @@ tr:hover {
 }
 
 #content {
-    padding-top: 10vh;
+    padding-top: 11vh;
     font-size: 20px;
     font-family: 'Noto Sans TC', sans-serif;
     animation: 1s slideIn;
@@ -183,6 +183,9 @@ tr:hover {
 @media only screen and (max-width: 500px) {
     #title_members {
         font-size: 25px;
+    }
+    td, th {
+        font-size: 14px;
     }
 }
 
