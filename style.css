@@ -5,8 +5,7 @@ body {
 
 p {
     margin: 5vh 0 5vh 0;
-    line-height: 40px;
-    /* TODO */
+    
 }
 
 table {
@@ -20,7 +19,6 @@ td, th {
     width: 200px;
     font-size: 18px;
     padding: 5px 1px 5px 1px;
-    /* border: 1px solid papayawhip; */
     text-align: center;
 }
 
@@ -42,20 +40,7 @@ tr:hover {
 }
 
 #head img {
-    margin: 0 auto 0 auto;
-    display: block;
-    width: 40vw;
-    animation: 2s fadeIn;
     animation-timing-function: ease-in;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 #background {
@@ -123,6 +108,28 @@ tr:hover {
     opacity: 0.7;
 }
 
+#art_directory div {
+    margin: 20px 10px 20px 20px;
+}
+
+#art_directory a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#art_directory a:hover {
+    text-decoration: underline;
+}
+
+#art_class {
+    color: white;
+    font-size: 30px;
+    margin: 20px 0 20px 10px;
+    font-weight: bolder;
+}
+
 #title_members {
     text-align: center;
     margin: 20px 0 20px 10px;
@@ -130,14 +137,44 @@ tr:hover {
     color: white;
 }
 
+#banner {
+    animation: 2s fadeIn_banner;
+    display: block;
+    margin: 130px auto 20px auto;
+    width: 70vw;
+}
+
 #hotel {
+    animation: 2s fadeIn_hotel;
+    margin: 0 auto 0 auto;
+    display: block;
+    width: 50vw;
     opacity: 0.5;
     visibility: hidden;
+}
+
+@keyframes fadeIn_banner {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn_hotel {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }
 
 #content {
     padding-top: 11vh;
     font-size: 20px;
+    line-height: 40px;
     font-family: 'Noto Sans TC', sans-serif;
     animation: 1s slideIn;
     animation-timing-function: ease-in;
@@ -165,6 +202,7 @@ tr:hover {
 
 #padding {
     height: 10vh;
+    background-color: rgb(49, 57, 73);
 }
 
 .link {
@@ -194,17 +232,30 @@ tr:hover {
     width: 26px;
 }
 
+.day {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: white;
+    margin: 10px 0 10px 20px;
+}
+
+.day h3 {
+    font-size: 25px;
+    margin: 10px 0 10px -10px;
+}
+
+.section {
+    margin: 10px 0 10px 20px;
+}
+
+.date {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #EED07C;
+}
+
 .bottom_icon {
     margin: 0 5px 0 5px;
     width: 35px;
-}
-
-
-
-@media only screen and (max-width: 1400px) {
-    #head img {
-        width: 60vw;
-    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -214,12 +265,12 @@ tr:hover {
     }
 }
 
-@media only screen and (max-width: 800px) {
-    #head img {
-        width: 80vw;
+@media only screen and (max-width: 600px) {
+    #banner {
+        margin-top: 80px;
     }
-    #head {
-        height: 90vh;
+    #hotel {
+        visibility: visible;
     }
 }
 
@@ -238,6 +289,7 @@ tr:hover {
     }
     #content {
         font-size: 15px;
+        line-height: 30px;
     }
     #title {
         font-size: 15px;
@@ -245,10 +297,10 @@ tr:hover {
     #title_members {
         font-size: 20px;
     }
-}
-
-@media only screen and (max-width: 350px) {
+    #banner {
+        width: 80vw;
+    }
     #hotel {
-        visibility: visible;
+        width: 80vw;
     }
 }
