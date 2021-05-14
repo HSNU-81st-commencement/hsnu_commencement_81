@@ -115,7 +115,7 @@ tr:hover {
 #art_directory a {
     text-decoration: none;
     color: white;
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -240,17 +240,22 @@ tr:hover {
 
 .day h3 {
     font-size: 25px;
-    margin: 10px 0 10px -10px;
+    margin: 10px 0 10px 0;
+}
+
+.day ol {
+    padding-left: 20px;
 }
 
 .section {
-    margin: 10px 0 10px 20px;
+    margin: 10px 50px 10px 30px;
 }
 
 .date {
     font-family: 'Playfair Display', serif;
     font-size: 25px;
     color: #EED07C;
+    margin-left: -10px;
 }
 
 .bottom_icon {
