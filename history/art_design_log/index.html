@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/img/hsnu.png" type="image/x-icon">
+    <script src="/art_history.js"></script>
     <title>建設記事</title>
 </head>
 
@@ -49,21 +50,20 @@
         </div>
     </nav>
     <main id="art_directory">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div><a href="樓梯組">樓梯組</a></div>
-                    <div><a href="服裝組">服裝組</a></div>
-                    <div><a href="噴水池組">噴水池組</a></div>
-                    <div><a href="櫃台組">櫃台組</a></div>
-                    <div><a href="裝置藝術組">裝置藝術組</a></div>
-                    <div><a href="水晶燈組">水晶燈組</a></div>
-                    <div><a href="機動組">機動組</a></div>
-                </div>
-            </div>
+        <div class="box" id="box_left">
+            <div><a href="樓梯組" onclick="show_art_history(this);">樓梯組</a></div>
+            <div><a href="服裝組" onclick="show_art_history(this);">服裝組</a></div>
+            <div><a href="噴水池組" onclick="show_art_history(this);">噴水池組</a></div>
+            <div><a href="櫃台組" onclick="show_art_history(this);">櫃台組</a></div>
+            <div><a href="裝置藝術組" onclick="show_art_history(this);">裝置藝術組</a></div>
+            <div><a href="水晶燈組" onclick="show_art_history(this);">水晶燈組</a></div>
+            <div><a href="機動組" onclick="show_art_history(this);">機動組</a></div>
+        </div>
+        <div class="box" id="history_content">
+            
         </div>
     </main>
-    <footer class="navbar navbar-expand-lg navbar-dark fixed-bottom" id="footer">
+    <footer class="navbar navbar-expand-lg navbar-dark sticky-bottom" id="footer">
         <div class="container" id="copyright">
             <div class="col-sm-6">
                 <span>© 2021 師大附中 81 屆畢典小組</span>
