@@ -1,13 +1,20 @@
-window.onload = render_history()
-
-function render_history() {
-    $.getJSON("../data.json", function(json) {
-        var data = json[document.title];
-        var art_class = document.createElement("h1");
-        art_class.innerText = document.title;
-        art_class.id = "art_class"
-        document.body.appendChild(art_class);
-        for (i=0;i<data.length;i++){
+function render_history(art = null, embed = false) {
+    console.log(art)
+    if (embed && document.body.clientWidth > 800) {
+        this.event.preventDefault();
+    }
+    $.getJSON("/history/art_design_log/data.json", function (json) {
+        var data = json[art ? art : document.title];
+        if (!embed) {
+            var art_class = document.createElement("h1");
+            art_class.innerText = art ? art : document.title;
+            art_class.id = "art_class"
+            document.body.appendChild(art_class);
+        }
+        else {
+            document.getElementById("history_content").innerHTML = "";
+        }
+        for (i = 0; i < data.length; i++) {
             var day = document.createElement("div");
             day.classList.add("day");
             var date = document.createElement("div");
@@ -21,9 +28,13 @@ function render_history() {
             h.innerText = "進度";
             section.appendChild(h);
             var des = document.createElement("div");
-            des.innerText = data[i]["進度"];
+            des.innerHTML = "<ol>";
+            for (j = 0; j < data[i]["進度"].length; j++) {
+                des.innerHTML += "<li>" + data[i]["進度"][j] + "</li>"
+            }
+            des.innerHTML += "</ol>";
             section.appendChild(des);
-            day.appendChild(section)
+            day.appendChild(section);
 
             var section = document.createElement("div");
             section.classList.add("section");
@@ -31,7 +42,11 @@ function render_history() {
             h.innerText = "問題";
             section.appendChild(h);
             var des = document.createElement("div");
-            des.innerText = data[i]["問題"];
+            des.innerHTML = "<ol>";
+            for (j = 0; j < data[i]["問題"].length; j++) {
+                des.innerHTML += "<li>" + data[i]["問題"][j] + "</li>"
+            }
+            des.innerHTML += "</ol>";
             section.appendChild(des);
             day.appendChild(section);
 
@@ -39,13 +54,22 @@ function render_history() {
             section.classList.add("section");
             var h = document.createElement("h3");
             h.innerText = "雜記";
-            section.appendChild(h);
             var des = document.createElement("div");
-            des.innerText = data[i]["雜記"];
+            section.appendChild(h);
+            des.innerHTML = "<ol>";
+            for (j = 0; j < data[i]["雜記"].length; j++) {
+                des.innerHTML += "<li>" + data[i]["雜記"][j] + "</li>"
+            }
+            des.innerHTML += "</ol>";
             section.appendChild(des);
             day.appendChild(section);
 
-            document.body.appendChild(day)
+            if (embed) {
+                document.getElementById("history_content").appendChild(day);
+            }
+            else {
+                document.body.appendChild(day);
+            }
         }
     })
 }

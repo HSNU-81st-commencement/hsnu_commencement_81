@@ -14,10 +14,53 @@
     <link rel="shortcut icon" href="/img/hsnu.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="../render.js"></script>
+    <script>
+        window.onload = render_history();
+    </script>
     <title>機動組</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar">
+        <div class="navbar-brand">
+            <a href="/" id="title">
+                <img src="/img/hsnu.png" alt="HSNU" id="icon">
+                師大附中 81 屆畢業典禮
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            style="border-color: rgba(255, 255, 255, 0)">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 100%;">
+            <ul class="navbar-nav" id="nav-links">
+                <li class="nav-item"><a href="" class="nav-link link">套裝行程</a></li>
+                <li class="nav-item"><a href="" class="nav-link link">行程實況</a></li>
+                <li class="nav-item"><a href="" class="nav-link link">期間活動</a></li>
+                <li class="nav-item"><a href="" class="nav-link link">飯店設施</a></li>
+                <li class="nav-item"><a href="" class="nav-link link">新聞報導</a></li>
+                <li class="nav-item"><a href="/specialthanks.html" class="nav-link link">特別感謝</a></li>
+                <li class="nav-item"><a href="/scoreboard.html" class="nav-link link">班級貢獻排行榜</a></li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">創建歷史</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="" class="dropdown-item">管理團隊運作</a>
+                        <a href="" class="dropdown-item">飯店外觀建設</a>
+                        <a href="/history/art_design_log/" class="dropdown-item">建設記事</a>
+                    </div>
+                <li class="nav-item"><a href="/members.html" class="nav-link link">關於我們</a></li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

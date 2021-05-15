@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/img/hsnu.png" type="image/x-icon">
-    <script src="/art_history.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="render.js"></script>
     <title>建設記事</title>
 </head>
 
@@ -51,19 +53,19 @@
     </nav>
     <main id="art_directory">
         <div class="box" id="box_left">
-            <div><a href="樓梯組" onclick="show_art_history(this);">樓梯組</a></div>
-            <div><a href="服裝組" onclick="show_art_history(this);">服裝組</a></div>
-            <div><a href="噴水池組" onclick="show_art_history(this);">噴水池組</a></div>
-            <div><a href="櫃台組" onclick="show_art_history(this);">櫃台組</a></div>
-            <div><a href="裝置藝術組" onclick="show_art_history(this);">裝置藝術組</a></div>
-            <div><a href="水晶燈組" onclick="show_art_history(this);">水晶燈組</a></div>
-            <div><a href="機動組" onclick="show_art_history(this);">機動組</a></div>
+            <div><a href="樓梯組" onclick="render_history('樓梯組', true)">樓梯組</a></div>
+            <div><a href="服裝組" onclick="render_history('服裝組', true);">服裝組</a></div>
+            <div><a href="噴水池組" onclick="render_history('噴水池組', true);">噴水池組</a></div>
+            <div><a href="櫃台組" onclick="render_history('櫃台組', true);">櫃台組</a></div>
+            <div><a href="裝置藝術組" onclick="render_history('裝置藝術組', true);">裝置藝術組</a></div>
+            <div><a href="水晶燈組" onclick="render_history('水晶燈組', true);">水晶燈組</a></div>
+            <div><a href="機動組" onclick="render_history('機動組', true);">機動組</a></div>
         </div>
         <div class="box" id="history_content">
             
         </div>
     </main>
-    <footer class="navbar navbar-expand-lg navbar-dark sticky-bottom" id="footer">
+    <footer class="navbar navbar-expand-lg navbar-dark fixed-bottom" id="footer">
         <div class="container" id="copyright">
             <div class="col-sm-6">
                 <span>© 2021 師大附中 81 屆畢典小組</span>
@@ -75,9 +77,6 @@
             <div class="col-sm-6"></div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>

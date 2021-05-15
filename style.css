@@ -193,9 +193,14 @@ tr {
     float: left;
 }
 
+#history_content {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 #footer {
     background-color: rgb(49, 57, 73);
-    height: 20vh;
+    height: 18vh;
 }
 
 #copyright {
@@ -246,7 +251,6 @@ tr {
 }
 
 .box {
-    overflow: hidden;
     margin: auto 0 auto 0;
     height: 69vh;
 }
@@ -258,7 +262,7 @@ tr {
 .box a {
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
