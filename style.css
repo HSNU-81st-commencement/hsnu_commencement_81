@@ -35,7 +35,7 @@ tr {
     color: white;
 }
 
-#members_table tr:hover {
+#table_members tr:hover {
     opacity: 0.8;
 }
 
