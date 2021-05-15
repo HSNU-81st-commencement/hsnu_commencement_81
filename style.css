@@ -20,11 +20,30 @@ iframe {
     margin-top: 20px;
 }
 
+#table_members {
+    margin: auto 2px auto 2px;
+}
+
 #table_members td, th {
-    width: 200px;
     font-size: 18px;
     padding: 5px 1px 5px 1px;
     text-align: center;
+}
+
+#table_members td:nth-child(1) {
+    width: 13%;
+}
+
+#table_members td:nth-child(2) {
+    width: 12%;
+}
+
+#table_members td:nth-child(3), #table_members td:nth-child(4){
+    width: 22%;
+}
+
+#table_members td:nth-child(5) {
+    width: 31%;
 }
 
 tr:nth-child(even) {

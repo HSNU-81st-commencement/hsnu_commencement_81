@@ -1,7 +1,11 @@
-function render_history(art = null, embed = false) {
-    console.log(art)
+function render_history(THIS, art = null, embed = false) {
     if (embed && document.body.clientWidth > 800) {
         this.event.preventDefault();
+        var box = document.getElementById("box_left");
+        for (i=0;i<box.children.length;i++){
+            box.children[i].children[0].style.color = "white";
+        }
+        THIS.style.color = "#EED07C";
     }
     $.getJSON("/history/art_design_log/data.json", function (json) {
         var data = json[art ? art : document.title];
@@ -20,7 +24,7 @@ function render_history(art = null, embed = false) {
             var date = document.createElement("div");
             date.classList.add("date");
             date.innerText = data[i]["date"];
-            day.appendChild(date)
+            day.appendChild(date);
 
             var section = document.createElement("div");
             section.classList.add("section");
