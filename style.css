@@ -39,6 +39,10 @@ tr {
     opacity: 0.8;
 }
 
+#table_specialthanks {
+    margin: 40px auto 200px auto;
+}
+
 #table_specialthanks td, th {
     width: 300px;
     text-align: center;
