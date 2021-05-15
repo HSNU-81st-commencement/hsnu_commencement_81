@@ -46,6 +46,10 @@ iframe {
     width: 31%;
 }
 
+td span {
+    display: inline-block;
+}
+
 tr:nth-child(even) {
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -345,9 +349,6 @@ tr {
 @media only screen and (max-width: 500px) {
     #title_members {
         font-size: 25px;
-    }
-    td, th {
-        font-size: 14px;
     }
     #table_specialthanks td, th {
         font-size: 17px;
