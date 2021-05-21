@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(32, 56, 52);
+    background-color: rgb(32, 56, 52) !important;
     margin: 0 0 0 0;
 }
 
@@ -38,7 +38,7 @@ iframe {
     width: 12%;
 }
 
-#table_members td:nth-child(3), #table_members td:nth-child(4){
+#table_members td:nth-child(3), #table_members td:nth-child(4) {
     width: 22%;
 }
 
@@ -219,6 +219,23 @@ tr {
 #history_content {
     overflow-x: hidden;
     overflow-y: scroll;
+}
+
+#img_container {
+    margin: 10px 50px 10px 50px;
+}
+
+#img_container img {
+    transition: 0.3s ease-in;
+    width: 150px;
+    height: 100px;
+    margin: 10px 10px 10px 10px;
+    filter: brightness(80%);
+}
+
+#img_container img:hover {
+    transform: scale(1.05);
+    filter: brightness(120%);
 }
 
 #footer {
