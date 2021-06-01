@@ -2,7 +2,7 @@ function render_history(THIS, art = null, embed = false) {
     if (embed && document.body.clientWidth > 800) {
         this.event.preventDefault();
         var box = document.getElementById("box_left");
-        for (i=0;i<box.children.length;i++){
+        for (i = 0; i < box.children.length; i++) {
             box.children[i].children[0].style.color = "white";
         }
         THIS.style.color = "#EED07C";
