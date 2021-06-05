@@ -234,10 +234,18 @@ tr {
 }
 
 #img_container {
-    margin: 10px 50px 10px 50px;
+    margin: 10px 0 10px 20px;
+    text-align: center;
+}
+
+#img_container::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 #img_container img {
+    float: left;
     transition: 0.3s ease-in;
     width: 150px;
     height: 100px;
@@ -378,6 +386,10 @@ tr {
         width: 96vw;
         height: 54vw;
     }
+    #img_container img {
+        width: 120px;
+        height: 80px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -401,6 +413,9 @@ tr {
     #icons::before {
         content: "\A";
         white-space: pre;
+    }
+    #mourn {
+        font-size: 15px;
     }
 }
 
@@ -426,5 +441,8 @@ tr {
 @media only screen and (max-width: 350px) {
     #table_specialthanks td, th {
         font-size: 10px;
+    }
+    #mourn {
+        font-size: 13px;
     }
 }
