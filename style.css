@@ -233,6 +233,31 @@ tr {
     overflow-y: scroll;
 }
 
+#main_article_2 {
+    animation-delay: 1s;
+}
+
+#main_article_3 {
+    animation-delay: 2s;
+}
+
+#main_article_4 {
+    animation-delay: 3s;
+}
+
+#main_article_5 {
+    animation-delay: 4s;
+}
+
+#mourn {
+    opacity: 0;
+    animation-name: showUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
 #img_container {
     margin: 10px 0 10px 20px;
     text-align: center;
@@ -296,6 +321,25 @@ tr {
 
 .container {
     color: white;
+}
+
+.main_article {
+    opacity: 0;
+    animation-name: showUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showUp {
+    from {
+        transform: translate(0, 50px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
 }
 
 .icon {

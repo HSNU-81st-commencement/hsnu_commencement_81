@@ -1,5 +1,5 @@
 # 師大附中 81 屆畢業典禮網站
-<img src="https://img.shields.io/badge/MADE_WITH-%E2%9D%A4_FOR_HSNU-red?style=for-the-badge">
+<img src="https://img.shields.io/badge/MADE_WITH-%E2%9D%A4_OF_HSNUers-red?style=for-the-badge">
 <p align="center">布魯斯格，Blue Sky。</p>
 <p>&ensp;&ensp;&ensp;&ensp;歲月如梭，我們即將從附中畢業，師大附中第 81
 屆畢業典禮主題為「布魯斯格大飯店」，飯店一詞用在常駐附中的我們再適合不過。我們擁有最澄澈的藍天，加上長時間的相處，附中對我們而言就像飯店一樣，設備齊全，舒適如自家。我們有大的浮誇的操場、猶如小型交誼廳的舊北社辦、看得見天空的泳池、還有一年換一次房間的教室。
