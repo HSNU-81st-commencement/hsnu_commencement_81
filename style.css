@@ -166,6 +166,10 @@ tr {
     font-weight: bolder;
 }
 
+#art_directory {
+    min-height: 80vh;
+}
+
 #title_members {
     text-align: center;
     font-family: 'Noto Sans TC', sans-serif;
