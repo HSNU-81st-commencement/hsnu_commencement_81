@@ -7,6 +7,14 @@ p {
     margin: 5vh 0 5vh 0;
 }
 
+h1 {
+    color: white;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 table {
     font-family: 'Noto Sans TC', sans-serif;
     margin: 10px auto 20px auto;
@@ -223,6 +231,25 @@ tr {
     animation-timing-function: ease-in;
 }
 
+#souvenir_content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#souvenir_content img {
+    height: 270px;
+    width: 270px;
+}
+
+#souvenir_content div {
+    margin: 20px 15px 20px 15px;
+    color: white;
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
 #box_left {
     width: 325px;
     float: left;
@@ -433,6 +460,13 @@ tr {
     #img_container img {
         width: 120px;
         height: 80px;
+    }
+    #souvenir_content {
+        flex-direction: column;
+    }
+    #souvenir_content img {
+        width: 60vw;
+        height: 60vw;
     }
 }
 
